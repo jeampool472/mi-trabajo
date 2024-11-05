@@ -1,0 +1,33 @@
+### Registo de usuario
+
+POST http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name":"lediaz",
+    "email":"lediaz@gmail.com",
+    "password":"diaz12345",
+    "c_password":"diaz12345"
+}
+
+
+### autenticacion (login)
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+     "email":"lediaz@gmail.com",
+     "password":"diaz12345"
+}
+
+### perfil
+post  http://127.0.0.1:8000/api/v1/auth/profile
+Accept: application/json
+Authorization: Bearer 4|4EqeY2n7btcIFCOJSOzEJ5vPL6Mmd6YSkiObMxUEf67a1605,
+
+### salir
+POST http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 4|4EqeY2n7btcIFCOJSOzEJ5vPL6Mmd6YSkiObMxUEf67a1605,
